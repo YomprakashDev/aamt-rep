@@ -1,0 +1,38 @@
+<div class="tab-main">
+
+<div class="tab-buttons">
+  <button
+    class="tab-button"
+    [class.active]="currentTab() === 'all-tasks'"
+    (click)="onChangeTab('all-tasks')"
+  >
+    All Tasks
+  </button>
+
+  <button
+    class="tab-button"
+    [class.active]="currentTab() === 'my-tasks'"
+    (click)="onChangeTab('my-tasks')"
+  >
+    My Tasks
+  </button>
+
+  <button
+    class="tab-button"
+    [class.active]="currentTab() === 'resolved'"
+    (click)="onChangeTab('resolved')"
+  >
+    Resolved
+  </button>
+</div>
+
+
+  @if (currentTab()==='all-tasks') {
+  <app-all-tabs></app-all-tabs>
+  }@else if (currentTab()==='my-tasks') {
+  <app-my-tasks></app-my-tasks>
+  }@else if (currentTab()==='resloved') {
+  <app-resloved></app-resloved>
+  }
+  
+</div>

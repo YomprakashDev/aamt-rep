@@ -1,0 +1,26 @@
+<div class="login-wrapper">
+  <div class="login-box">
+    <h1 class="logo">🚀 MyApp</h1>
+    <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="email"
+        required
+        placeholder="Email"
+        class="input"
+      />
+      <input
+        type="password"
+        name="password"
+        [(ngModel)]="password"
+        required
+        placeholder="Password"
+        class="input"
+      />
+      <button type="submit" [disabled]="!loginForm.form.valid" class="btn-login">
+        Login
+      </button>
+    </form>
+  </div>
+</div>

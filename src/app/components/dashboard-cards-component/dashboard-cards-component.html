@@ -1,0 +1,25 @@
+<div class="card-container">
+  @for (card of cards; track card.title) {
+  <div class="card">
+
+    <div class="sub-card">
+
+  
+    <div class="card-header">{{ card.title }}</div>
+
+    <div class="card-body">
+      <div class="card-value">{{ card.value }}</div>
+      <div class="card-change" [ngClass]="card.change >= 0 ? 'up' : 'down'">
+        <span> {{ card.change >= 0 ? "↑" : "↓" }} {{ card.change }}% </span>
+        <span class="comparison">VS previous quarter</span>
+      </div>
+    </div>
+      </div>
+
+    <div class="card-footer">
+      <a href="#">See all contracts</a>
+      <span class="arrow">→</span>
+    </div>
+  </div>
+  }
+</div>

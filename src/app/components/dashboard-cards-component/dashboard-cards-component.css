@@ -1,0 +1,98 @@
+.card-container {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 340px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #e0e0e0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+.sub-card{
+  background-color: #f1f2f3;
+padding: 10px;
+border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  padding: 10px 0;
+}
+
+.card-change {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-change.up span:first-child {
+  background: #d1fae5;
+  color: #065f46;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.card-change.down span:first-child {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.comparison {
+  color: #6b7280;
+}
+
+.card-footer {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #374151;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+.card-footer a{
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card-footer .arrow {
+  font-weight: bold;
+  font-size: 16px;
+}

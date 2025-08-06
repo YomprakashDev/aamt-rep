@@ -1,0 +1,26 @@
+<div class="task-table-wrapper">
+  <table class="task-table">
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Counter Party Name</th>
+        <th>Related Document ⬍</th>
+        <th>Due Date</th>
+        <th>Assigned By</th>
+        <th>Frequency</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (task of tasks; track task) {
+        <tr>
+          <td>{{ task.task }}</td>
+          <td>{{ task.name }}</td>
+          <td><a href="#">{{ task.document }}</a></td>
+          <td>{{ task.dueDate }}</td>
+          <td>{{ task.assignedBy }}</td>
+          <td>{{ task.frequency }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>
