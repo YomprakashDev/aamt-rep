@@ -24,7 +24,7 @@ width: 100%;
   font-weight: 600;
   color: #303030;
   font-family: Arial;
-  letter-spacing: -0.055em;
+ 
 }
 
 /* Search Section */
@@ -186,4 +186,18 @@ margin-right: 64px;
   .header-actions {
     gap: 12px;
   }
+}
+.icon-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-wrapper i {
+  color: black;       /* <- sets icon color */
+  font-size: 20px;    /* optional: size */
 }

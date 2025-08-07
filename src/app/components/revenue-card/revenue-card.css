@@ -107,18 +107,19 @@
   right: 0;
   top: 0;
   height: 32px;
+  padding-left: 4px;
   width: 20%;
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 4px;
   z-index: 4;
 }
 
 .stripe {
-  background: #4f46e5;
+  background: #7b76dd;
   height: 32px;
   width: 4px;
-  border-radius: 2px;
+ 
 }
 
 .legend {
