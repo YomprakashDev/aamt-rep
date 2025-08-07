@@ -1,16 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
 
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Segoe UI', Roboto, sans-serif;
-}
-body{
-  width: 100vw;
-    height: 100vh;
+  font-family: "Segoe UI", Roboto, sans-serif;
 }
 
-html, body { height: 100%; }
-body { 
-      background-color:#f5f8fa;
-  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f5f8fa;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Angular component elements (global) */
+app-header,
+app-sidebar,
+app-dashboard,
+app-settings,
+app-documents {
+  width: 100%;
 }

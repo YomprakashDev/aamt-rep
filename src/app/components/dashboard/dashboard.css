@@ -1,0 +1,13 @@
+
+.divider{
+    display: flex;
+  justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+app-contract-type-card,app-revenue-card{
+    width:100%;
+
+}

@@ -1,6 +1,8 @@
 .task-table-wrapper {
   margin: 20px;
   overflow-x: auto;
+  border: 0.5px solid #333;
+  border-radius: 4px;
 }
 
 .task-table {

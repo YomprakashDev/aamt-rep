@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar-component',
@@ -8,6 +9,8 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 activeItem: string = 'dashboard'; 
+
+constructor(private router: Router) {}
 
   menuItems = [
     { id: 'dashboard', icon: 'dashboard', tooltip: 'Dashboard' },
@@ -21,9 +24,11 @@ activeItem: string = 'dashboard';
     { id: 'settings', icon: 'settings', tooltip: 'Settings' }
   ];
 
+
+
   onMenuClick(itemId: string) {
     this.activeItem = itemId;
-    console.log('Menu item clicked:', itemId);
+     this.router.navigate([`/app/${itemId}`]);
 
   }
 }

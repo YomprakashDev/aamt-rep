@@ -98,7 +98,7 @@
   margin-left: 12px;
   padding: 6px 8px;
   background-color: #C7D2FE;
-  color: #6a5acd;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 500;
   border-radius: 4px;
@@ -156,6 +156,53 @@
     width: 18px;
     height: 18px;
   }
+
+
+
 }
+
+/* Hide by default */
+.hover-card {
+  position: absolute;
+  left: 60px; /* Appears to the right of sidebar */
+  top: 0;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  min-width: 180px;
+  display: none;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+/* Show on hover */
+.nav-button:hover .hover-card {
+  display: flex;
+}
+
+/* Items inside hover card */
+.hover-card-item {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s ease;
+}
+
+.hover-card-item:hover {
+  background-color: #f3f4f6;
+}
+
+.hover-card-item.active {
+  background-color: #e0e7ff;
+  color: #6366f1;
+}
+
 
 

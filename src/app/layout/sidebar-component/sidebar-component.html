@@ -12,17 +12,22 @@
             class="nav-button"
             [class.active]="activeItem === 'dashboard'"
             (click)="onMenuClick('dashboard')"
-            title="Dashboard"
+            
           >
             <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="3"></circle>
               <path d="m12 1 3 6 6-3-3 6 6 3-6 3-3 6-3-6-6 3 3-6-6-3 6-3 3-6z"></path>
             </svg>
+            <div class="hover-card">
+      <div class="hover-card-item active">New Contract</div>
+      <div class="hover-card-item">Template Library</div>
+      <div class="hover-card-item">Import Contract</div>
+    </div>
           </button>
         </li>
 
         <!-- Document -->
-        <li class="nav-item">
+        <li class="nav-item" >
           <button 
             class="nav-button"
             [class.active]="activeItem === 'documents'"
@@ -151,6 +156,9 @@
 
         <!-- Settings -->
         <li class="nav-item">
+          <a >
+
+       
           <button 
             class="nav-button"
             [class.active]="activeItem === 'settings'"
@@ -162,6 +170,7 @@
               <path d="m12 1 3 6 6-3-3 6 6 3-6 3-3 6-3-6-6 3 3-6-6-3 6-3 3-6z"></path>
             </svg>
           </button>
+             </a>
         </li>
       </ul>
     </nav>

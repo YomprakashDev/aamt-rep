@@ -15,6 +15,6 @@ router = inject(Router)
   onLogin() {
     console.log('Email:', this.email);
     console.log('Password:', this.password);
-    this.router.navigateByUrl('/dashboard')
+    this.router.navigateByUrl('/app')
   }
 }
