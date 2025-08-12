@@ -18,9 +18,14 @@
         placeholder="Password"
         class="input"
       />
-      <button type="submit" [disabled]="!loginForm.form.valid" class="btn-login">
+      <button
+        type="submit"
+        [disabled]="!loginForm.form.valid"
+        class="btn-login"
+      >
         Login
       </button>
     </form>
+    <button type="submit" class="btn-login">sign In with Google</button>
   </div>
 </div>

@@ -31,6 +31,7 @@
     "@fortawesome/fontawesome-free": "^7.0.0",
     "bootstrap": "^5.3.7",
     "echarts": "^6.0.0",
+    "firebase": "^12.1.0",
     "ngx-echarts": "^20.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
